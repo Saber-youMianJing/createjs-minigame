@@ -1,21 +1,2 @@
-# sha-kinderjoy-wave2
-
-> kinderjoy games
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+##a createjs project
+###use easel.js ＆TweenJs由于是共通开发框架用的是vue，需要npm run dev之后可以观看demo ，暂时还没有bulid所以无法直接打开
