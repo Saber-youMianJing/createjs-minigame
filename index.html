@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>sha-kinderjoy-wave2</title>
+    <meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <style type="text/css" media="screen">
+    	#loading{
+    		position: absolute;
+    		width: 100%;
+    		height: 100%;
+    		left: 0;
+    		top: 0;
+    		background:#ec3876;
+    	}
+    	#loadprec{
+    		position: absolute;
+    		top:40%;
+    		font-size: 75px;
+    		width: 100%;
+    		text-align: center;
+    		color: yellow;
+    		font-family: 'Arial';
+            margin: 0;
+    	}
+    </style>
+</head>
+
+<body>
+	<div id="loading">
+		<p id="loadprec">0%</p>
+	</div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+	<script type="text/javascript">
+		var loadprec = document.getElementById('loadprec');
+		var prec = 0;
+		var t = setInterval(function(){
+			if (prec>30) {
+				clearInterval(t);
+			}else{
+				loadprec.innerHTML = prec+'%';
+				prec++;
+			}
+		}, 500);
+	</script>
+</body>
+</html>
